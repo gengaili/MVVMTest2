@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D38EE79AF4A9F527C41D0D4 /* Pods_MVVMTest2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69A481C617F24DC7C3EAB08 /* Pods_MVVMTest2.framework */; };
+		CB02FC551CF743A500416E11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC541CF743A500416E11 /* main.m */; };
+		CB02FC581CF743A500416E11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC571CF743A500416E11 /* AppDelegate.m */; };
+		CB02FC601CF743A500416E11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB02FC5F1CF743A500416E11 /* Assets.xcassets */; };
+		CB02FC631CF743A500416E11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB02FC611CF743A500416E11 /* LaunchScreen.storyboard */; };
+		CB02FC6E1CF743A500416E11 /* MVVMTest2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC6D1CF743A500416E11 /* MVVMTest2Tests.m */; };
+		CB02FC791CF743A500416E11 /* MVVMTest2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC781CF743A500416E11 /* MVVMTest2UITests.m */; };
+		CB02FCBB1CF745C100416E11 /* MRCMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC8B1CF745C100416E11 /* MRCMemoryCache.m */; };
+		CB02FCBC1CF745C100416E11 /* MRCRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC8E1CF745C100416E11 /* MRCRouter.m */; };
+		CB02FCBD1CF745C100416E11 /* MRCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC901CF745C100416E11 /* MRCUtil.m */; };
+		CB02FCBE1CF745C100416E11 /* MRCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC941CF745C100416E11 /* MRCNavigationController.m */; };
+		CB02FCBF1CF745C100416E11 /* MRCNavigationControllerStack.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC961CF745C100416E11 /* MRCNavigationControllerStack.m */; };
+		CB02FCC01CF745C100416E11 /* MRCSegmentedControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC981CF745C100416E11 /* MRCSegmentedControlController.m */; };
+		CB02FCC11CF745C100416E11 /* MRCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC9A1CF745C100416E11 /* MRCTabBarController.m */; };
+		CB02FCC21CF745C100416E11 /* MRCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC9C1CF745C100416E11 /* MRCTableViewController.m */; };
+		CB02FCC31CF745C100416E11 /* MRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FC9E1CF745C100416E11 /* MRCViewController.m */; };
+		CB02FCC41CF745C100416E11 /* MRCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCA01CF745C100416E11 /* MRCWebViewController.m */; };
+		CB02FCC51CF745C100416E11 /* MRCWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB02FCA11CF745C100416E11 /* MRCWebViewController.xib */; };
+		CB02FCC61CF745C100416E11 /* UINavigationItem+MRCBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCA31CF745C100416E11 /* UINavigationItem+MRCBackBarButtonItem.m */; };
+		CB02FCC71CF745C100416E11 /* UISearchBar+MRCShowsCancelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCA51CF745C100416E11 /* UISearchBar+MRCShowsCancelButton.m */; };
+		CB02FCC81CF745C100416E11 /* MRCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCA71CF745C100416E11 /* MRCLoginViewController.m */; };
+		CB02FCC91CF745C100416E11 /* MRCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB02FCA81CF745C100416E11 /* MRCLoginViewController.xib */; };
+		CB02FCCA1CF745C100416E11 /* MRCSegmentedControlViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCAD1CF745C100416E11 /* MRCSegmentedControlViewModel.m */; };
+		CB02FCCB1CF745C100416E11 /* MRCTabBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCAF1CF745C100416E11 /* MRCTabBarViewModel.m */; };
+		CB02FCCC1CF745C100416E11 /* MRCTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCB11CF745C100416E11 /* MRCTableViewModel.m */; };
+		CB02FCCD1CF745C100416E11 /* MRCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCB31CF745C100416E11 /* MRCViewModel.m */; };
+		CB02FCCE1CF745C100416E11 /* MRCViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCB61CF745C100416E11 /* MRCViewModelServicesImpl.m */; };
+		CB02FCCF1CF745C100416E11 /* MRCWebViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCB81CF745C100416E11 /* MRCWebViewModel.m */; };
+		CB02FCD01CF745C100416E11 /* MRCLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCBA1CF745C100416E11 /* MRCLoginViewModel.m */; };
+		CB02FCD91CF749DE00416E11 /* MRCTableViewCellStyleValue1.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCD81CF749DE00416E11 /* MRCTableViewCellStyleValue1.m */; };
+		CB02FCE01CF74A0400416E11 /* MRCDoubleTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCDC1CF74A0400416E11 /* MRCDoubleTitleView.m */; };
+		CB02FCE11CF74A0400416E11 /* MRCLoadingTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCDE1CF74A0400416E11 /* MRCLoadingTitleView.m */; };
+		CB02FCE21CF74A0400416E11 /* MRCLoadingTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB02FCDF1CF74A0400416E11 /* MRCLoadingTitleView.xib */; };
+		CB02FCEB1CF74BD500416E11 /* BarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCE61CF74BD500416E11 /* BarItem.m */; };
+		CB02FCEC1CF74BD500416E11 /* CBStoreHouseRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCE81CF74BD500416E11 /* CBStoreHouseRefreshControl.m */; };
+		CB02FCED1CF74BD500416E11 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CB02FCE91CF74BD500416E11 /* LICENSE */; };
+		CB02FCEE1CF74BD500416E11 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCEA1CF74BD500416E11 /* README.md */; };
+		CB02FCF11CF74C9300416E11 /* UIView+MRCFrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCF01CF74C9300416E11 /* UIView+MRCFrameAdditions.m */; };
+		CB02FCF41CF74DDB00416E11 /* MRCViewControllerAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCF31CF74DDB00416E11 /* MRCViewControllerAnimatedTransition.m */; };
+		CB02FCF81CF7501200416E11 /* MRCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCF61CF7501200416E11 /* MRCSettingsViewController.m */; };
+		CB02FCF91CF7501200416E11 /* MRCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB02FCF71CF7501200416E11 /* MRCSettingsViewController.xib */; };
+		CB02FCFC1CF7503300416E11 /* MRCSettingsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCFB1CF7503300416E11 /* MRCSettingsViewModel.m */; };
+		CB02FCFF1CF7556700416E11 /* MRCAboutViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FCFE1CF7556700416E11 /* MRCAboutViewModel.m */; };
+		CB02FD021CF755D100416E11 /* MRCFeedbackViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FD011CF755D100416E11 /* MRCFeedbackViewModel.m */; };
+		CB02FD061CF7567500416E11 /* MRCFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FD041CF7567500416E11 /* MRCFeedbackViewController.m */; };
+		CB02FD071CF7567500416E11 /* MRCFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB02FD051CF7567500416E11 /* MRCFeedbackViewController.xib */; };
+		CB02FD0B1CF757FA00416E11 /* MRCAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB02FD091CF757FA00416E11 /* MRCAboutViewController.m */; };
+		CB02FD0C1CF757FA00416E11 /* MRCAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB02FD0A1CF757FA00416E11 /* MRCAboutViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB02FC6A1CF743A500416E11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB02FC481CF743A500416E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB02FC4F1CF743A500416E11;
+			remoteInfo = MVVMTest2;
+		};
+		CB02FC751CF743A500416E11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB02FC481CF743A500416E11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB02FC4F1CF743A500416E11;
+			remoteInfo = MVVMTest2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		716F70DF76C75D04D8990421 /* Pods-MVVMTest2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTest2.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMTest2/Pods-MVVMTest2.release.xcconfig"; sourceTree = "<group>"; };
+		CB02FC501CF743A500416E11 /* MVVMTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB02FC541CF743A500416E11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB02FC561CF743A500416E11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB02FC571CF743A500416E11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB02FC5F1CF743A500416E11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB02FC621CF743A500416E11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB02FC641CF743A500416E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB02FC691CF743A500416E11 /* MVVMTest2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTest2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB02FC6D1CF743A500416E11 /* MVVMTest2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTest2Tests.m; sourceTree = "<group>"; };
+		CB02FC6F1CF743A500416E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB02FC741CF743A500416E11 /* MVVMTest2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTest2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB02FC781CF743A500416E11 /* MVVMTest2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTest2UITests.m; sourceTree = "<group>"; };
+		CB02FC7A1CF743A500416E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB02FC881CF745C100416E11 /* MRCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCConfig.h; sourceTree = "<group>"; };
+		CB02FC891CF745C100416E11 /* MRCConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCConstant.h; sourceTree = "<group>"; };
+		CB02FC8A1CF745C100416E11 /* MRCMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCMemoryCache.h; sourceTree = "<group>"; };
+		CB02FC8B1CF745C100416E11 /* MRCMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCMemoryCache.m; sourceTree = "<group>"; };
+		CB02FC8C1CF745C100416E11 /* MRCReactiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCReactiveView.h; sourceTree = "<group>"; };
+		CB02FC8D1CF745C100416E11 /* MRCRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCRouter.h; sourceTree = "<group>"; };
+		CB02FC8E1CF745C100416E11 /* MRCRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCRouter.m; sourceTree = "<group>"; };
+		CB02FC8F1CF745C100416E11 /* MRCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCUtil.h; sourceTree = "<group>"; };
+		CB02FC901CF745C100416E11 /* MRCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCUtil.m; sourceTree = "<group>"; };
+		CB02FC931CF745C100416E11 /* MRCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCNavigationController.h; sourceTree = "<group>"; };
+		CB02FC941CF745C100416E11 /* MRCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCNavigationController.m; sourceTree = "<group>"; };
+		CB02FC951CF745C100416E11 /* MRCNavigationControllerStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCNavigationControllerStack.h; sourceTree = "<group>"; };
+		CB02FC961CF745C100416E11 /* MRCNavigationControllerStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCNavigationControllerStack.m; sourceTree = "<group>"; };
+		CB02FC971CF745C100416E11 /* MRCSegmentedControlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCSegmentedControlController.h; sourceTree = "<group>"; };
+		CB02FC981CF745C100416E11 /* MRCSegmentedControlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCSegmentedControlController.m; sourceTree = "<group>"; };
+		CB02FC991CF745C100416E11 /* MRCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCTabBarController.h; sourceTree = "<group>"; };
+		CB02FC9A1CF745C100416E11 /* MRCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCTabBarController.m; sourceTree = "<group>"; };
+		CB02FC9B1CF745C100416E11 /* MRCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCTableViewController.h; sourceTree = "<group>"; };
+		CB02FC9C1CF745C100416E11 /* MRCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCTableViewController.m; sourceTree = "<group>"; };
+		CB02FC9D1CF745C100416E11 /* MRCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCViewController.h; sourceTree = "<group>"; };
+		CB02FC9E1CF745C100416E11 /* MRCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCViewController.m; sourceTree = "<group>"; };
+		CB02FC9F1CF745C100416E11 /* MRCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCWebViewController.h; sourceTree = "<group>"; };
+		CB02FCA01CF745C100416E11 /* MRCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCWebViewController.m; sourceTree = "<group>"; };
+		CB02FCA11CF745C100416E11 /* MRCWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRCWebViewController.xib; sourceTree = "<group>"; };
+		CB02FCA21CF745C100416E11 /* UINavigationItem+MRCBackBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+MRCBackBarButtonItem.h"; sourceTree = "<group>"; };
+		CB02FCA31CF745C100416E11 /* UINavigationItem+MRCBackBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+MRCBackBarButtonItem.m"; sourceTree = "<group>"; };
+		CB02FCA41CF745C100416E11 /* UISearchBar+MRCShowsCancelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+MRCShowsCancelButton.h"; sourceTree = "<group>"; };
+		CB02FCA51CF745C100416E11 /* UISearchBar+MRCShowsCancelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+MRCShowsCancelButton.m"; sourceTree = "<group>"; };
+		CB02FCA61CF745C100416E11 /* MRCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCLoginViewController.h; sourceTree = "<group>"; };
+		CB02FCA71CF745C100416E11 /* MRCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCLoginViewController.m; sourceTree = "<group>"; };
+		CB02FCA81CF745C100416E11 /* MRCLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRCLoginViewController.xib; sourceTree = "<group>"; };
+		CB02FCAB1CF745C100416E11 /* MRCNavigationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCNavigationProtocol.h; sourceTree = "<group>"; };
+		CB02FCAC1CF745C100416E11 /* MRCSegmentedControlViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCSegmentedControlViewModel.h; sourceTree = "<group>"; };
+		CB02FCAD1CF745C100416E11 /* MRCSegmentedControlViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCSegmentedControlViewModel.m; sourceTree = "<group>"; };
+		CB02FCAE1CF745C100416E11 /* MRCTabBarViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCTabBarViewModel.h; sourceTree = "<group>"; };
+		CB02FCAF1CF745C100416E11 /* MRCTabBarViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCTabBarViewModel.m; sourceTree = "<group>"; };
+		CB02FCB01CF745C100416E11 /* MRCTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCTableViewModel.h; sourceTree = "<group>"; };
+		CB02FCB11CF745C100416E11 /* MRCTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCTableViewModel.m; sourceTree = "<group>"; };
+		CB02FCB21CF745C100416E11 /* MRCViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCViewModel.h; sourceTree = "<group>"; };
+		CB02FCB31CF745C100416E11 /* MRCViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCViewModel.m; sourceTree = "<group>"; };
+		CB02FCB41CF745C100416E11 /* MRCViewModelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCViewModelServices.h; sourceTree = "<group>"; };
+		CB02FCB51CF745C100416E11 /* MRCViewModelServicesImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCViewModelServicesImpl.h; sourceTree = "<group>"; };
+		CB02FCB61CF745C100416E11 /* MRCViewModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCViewModelServicesImpl.m; sourceTree = "<group>"; };
+		CB02FCB71CF745C100416E11 /* MRCWebViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCWebViewModel.h; sourceTree = "<group>"; };
+		CB02FCB81CF745C100416E11 /* MRCWebViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCWebViewModel.m; sourceTree = "<group>"; };
+		CB02FCB91CF745C100416E11 /* MRCLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCLoginViewModel.h; sourceTree = "<group>"; };
+		CB02FCBA1CF745C100416E11 /* MRCLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCLoginViewModel.m; sourceTree = "<group>"; };
+		CB02FCD11CF746B500416E11 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CB02FCD71CF749DE00416E11 /* MRCTableViewCellStyleValue1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRCTableViewCellStyleValue1.h; path = ../MRCTableViewCellStyleValue1.h; sourceTree = "<group>"; };
+		CB02FCD81CF749DE00416E11 /* MRCTableViewCellStyleValue1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRCTableViewCellStyleValue1.m; path = ../MRCTableViewCellStyleValue1.m; sourceTree = "<group>"; };
+		CB02FCDB1CF74A0400416E11 /* MRCDoubleTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCDoubleTitleView.h; sourceTree = "<group>"; };
+		CB02FCDC1CF74A0400416E11 /* MRCDoubleTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCDoubleTitleView.m; sourceTree = "<group>"; };
+		CB02FCDD1CF74A0400416E11 /* MRCLoadingTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCLoadingTitleView.h; sourceTree = "<group>"; };
+		CB02FCDE1CF74A0400416E11 /* MRCLoadingTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCLoadingTitleView.m; sourceTree = "<group>"; };
+		CB02FCDF1CF74A0400416E11 /* MRCLoadingTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRCLoadingTitleView.xib; sourceTree = "<group>"; };
+		CB02FCE51CF74BD500416E11 /* BarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarItem.h; sourceTree = "<group>"; };
+		CB02FCE61CF74BD500416E11 /* BarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarItem.m; sourceTree = "<group>"; };
+		CB02FCE71CF74BD500416E11 /* CBStoreHouseRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBStoreHouseRefreshControl.h; sourceTree = "<group>"; };
+		CB02FCE81CF74BD500416E11 /* CBStoreHouseRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBStoreHouseRefreshControl.m; sourceTree = "<group>"; };
+		CB02FCE91CF74BD500416E11 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CB02FCEA1CF74BD500416E11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CB02FCEF1CF74C9300416E11 /* UIView+MRCFrameAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MRCFrameAdditions.h"; sourceTree = "<group>"; };
+		CB02FCF01CF74C9300416E11 /* UIView+MRCFrameAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MRCFrameAdditions.m"; sourceTree = "<group>"; };
+		CB02FCF21CF74DDB00416E11 /* MRCViewControllerAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCViewControllerAnimatedTransition.h; sourceTree = "<group>"; };
+		CB02FCF31CF74DDB00416E11 /* MRCViewControllerAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCViewControllerAnimatedTransition.m; sourceTree = "<group>"; };
+		CB02FCF51CF7501200416E11 /* MRCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCSettingsViewController.h; sourceTree = "<group>"; };
+		CB02FCF61CF7501200416E11 /* MRCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCSettingsViewController.m; sourceTree = "<group>"; };
+		CB02FCF71CF7501200416E11 /* MRCSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRCSettingsViewController.xib; sourceTree = "<group>"; };
+		CB02FCFA1CF7503300416E11 /* MRCSettingsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRCSettingsViewModel.h; path = BaseClass/MRCSettingsViewModel.h; sourceTree = "<group>"; };
+		CB02FCFB1CF7503300416E11 /* MRCSettingsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRCSettingsViewModel.m; path = BaseClass/MRCSettingsViewModel.m; sourceTree = "<group>"; };
+		CB02FCFD1CF7556700416E11 /* MRCAboutViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCAboutViewModel.h; sourceTree = "<group>"; };
+		CB02FCFE1CF7556700416E11 /* MRCAboutViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCAboutViewModel.m; sourceTree = "<group>"; };
+		CB02FD001CF755D100416E11 /* MRCFeedbackViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCFeedbackViewModel.h; sourceTree = "<group>"; };
+		CB02FD011CF755D100416E11 /* MRCFeedbackViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCFeedbackViewModel.m; sourceTree = "<group>"; };
+		CB02FD031CF7567500416E11 /* MRCFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCFeedbackViewController.h; sourceTree = "<group>"; };
+		CB02FD041CF7567500416E11 /* MRCFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCFeedbackViewController.m; sourceTree = "<group>"; };
+		CB02FD051CF7567500416E11 /* MRCFeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRCFeedbackViewController.xib; sourceTree = "<group>"; };
+		CB02FD081CF757FA00416E11 /* MRCAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCAboutViewController.h; sourceTree = "<group>"; };
+		CB02FD091CF757FA00416E11 /* MRCAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCAboutViewController.m; sourceTree = "<group>"; };
+		CB02FD0A1CF757FA00416E11 /* MRCAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRCAboutViewController.xib; sourceTree = "<group>"; };
+		E9D38694D179876753CBDEE3 /* Pods-MVVMTest2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTest2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMTest2/Pods-MVVMTest2.debug.xcconfig"; sourceTree = "<group>"; };
+		F69A481C617F24DC7C3EAB08 /* Pods_MVVMTest2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMTest2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB02FC4D1CF743A500416E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D38EE79AF4A9F527C41D0D4 /* Pods_MVVMTest2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB02FC661CF743A500416E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB02FC711CF743A500416E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55F5C46CB29CCAA706C75843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F69A481C617F24DC7C3EAB08 /* Pods_MVVMTest2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F2096474512036609254980 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9D38694D179876753CBDEE3 /* Pods-MVVMTest2.debug.xcconfig */,
+				716F70DF76C75D04D8990421 /* Pods-MVVMTest2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB02FC471CF743A500416E11 = {
+			isa = PBXGroup;
+			children = (
+				CB02FC521CF743A500416E11 /* MVVMTest2 */,
+				CB02FC6C1CF743A500416E11 /* MVVMTest2Tests */,
+				CB02FC771CF743A500416E11 /* MVVMTest2UITests */,
+				CB02FC511CF743A500416E11 /* Products */,
+				8F2096474512036609254980 /* Pods */,
+				55F5C46CB29CCAA706C75843 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB02FC511CF743A500416E11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FC501CF743A500416E11 /* MVVMTest2.app */,
+				CB02FC691CF743A500416E11 /* MVVMTest2Tests.xctest */,
+				CB02FC741CF743A500416E11 /* MVVMTest2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB02FC521CF743A500416E11 /* MVVMTest2 */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FCE31CF74BD500416E11 /* CBStoreHouseRefreshControl */,
+				CB02FC861CF745C100416E11 /* Model */,
+				CB02FC871CF745C100416E11 /* Util */,
+				CB02FC911CF745C100416E11 /* View */,
+				CB02FCA91CF745C100416E11 /* ViewModel */,
+				CB02FC561CF743A500416E11 /* AppDelegate.h */,
+				CB02FC571CF743A500416E11 /* AppDelegate.m */,
+				CB02FCD11CF746B500416E11 /* PrefixHeader.pch */,
+				CB02FC5F1CF743A500416E11 /* Assets.xcassets */,
+				CB02FC611CF743A500416E11 /* LaunchScreen.storyboard */,
+				CB02FC641CF743A500416E11 /* Info.plist */,
+				CB02FC531CF743A500416E11 /* Supporting Files */,
+			);
+			path = MVVMTest2;
+			sourceTree = "<group>";
+		};
+		CB02FC531CF743A500416E11 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FC541CF743A500416E11 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB02FC6C1CF743A500416E11 /* MVVMTest2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FC6D1CF743A500416E11 /* MVVMTest2Tests.m */,
+				CB02FC6F1CF743A500416E11 /* Info.plist */,
+			);
+			path = MVVMTest2Tests;
+			sourceTree = "<group>";
+		};
+		CB02FC771CF743A500416E11 /* MVVMTest2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FC781CF743A500416E11 /* MVVMTest2UITests.m */,
+				CB02FC7A1CF743A500416E11 /* Info.plist */,
+			);
+			path = MVVMTest2UITests;
+			sourceTree = "<group>";
+		};
+		CB02FC861CF745C100416E11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB02FC871CF745C100416E11 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FCEF1CF74C9300416E11 /* UIView+MRCFrameAdditions.h */,
+				CB02FCF01CF74C9300416E11 /* UIView+MRCFrameAdditions.m */,
+				CB02FC881CF745C100416E11 /* MRCConfig.h */,
+				CB02FC891CF745C100416E11 /* MRCConstant.h */,
+				CB02FC8A1CF745C100416E11 /* MRCMemoryCache.h */,
+				CB02FC8B1CF745C100416E11 /* MRCMemoryCache.m */,
+				CB02FC8C1CF745C100416E11 /* MRCReactiveView.h */,
+				CB02FC8D1CF745C100416E11 /* MRCRouter.h */,
+				CB02FC8E1CF745C100416E11 /* MRCRouter.m */,
+				CB02FC8F1CF745C100416E11 /* MRCUtil.h */,
+				CB02FC901CF745C100416E11 /* MRCUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CB02FC911CF745C100416E11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FCDA1CF74A0400416E11 /* TitleView */,
+				CB02FC921CF745C100416E11 /* BaseClass */,
+				CB02FCA61CF745C100416E11 /* MRCLoginViewController.h */,
+				CB02FCA71CF745C100416E11 /* MRCLoginViewController.m */,
+				CB02FCA81CF745C100416E11 /* MRCLoginViewController.xib */,
+				CB02FCF51CF7501200416E11 /* MRCSettingsViewController.h */,
+				CB02FCF61CF7501200416E11 /* MRCSettingsViewController.m */,
+				CB02FCF71CF7501200416E11 /* MRCSettingsViewController.xib */,
+				CB02FD081CF757FA00416E11 /* MRCAboutViewController.h */,
+				CB02FD091CF757FA00416E11 /* MRCAboutViewController.m */,
+				CB02FD0A1CF757FA00416E11 /* MRCAboutViewController.xib */,
+				CB02FD031CF7567500416E11 /* MRCFeedbackViewController.h */,
+				CB02FD041CF7567500416E11 /* MRCFeedbackViewController.m */,
+				CB02FD051CF7567500416E11 /* MRCFeedbackViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB02FC921CF745C100416E11 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FCF21CF74DDB00416E11 /* MRCViewControllerAnimatedTransition.h */,
+				CB02FCF31CF74DDB00416E11 /* MRCViewControllerAnimatedTransition.m */,
+				CB02FC931CF745C100416E11 /* MRCNavigationController.h */,
+				CB02FC941CF745C100416E11 /* MRCNavigationController.m */,
+				CB02FC951CF745C100416E11 /* MRCNavigationControllerStack.h */,
+				CB02FC961CF745C100416E11 /* MRCNavigationControllerStack.m */,
+				CB02FC971CF745C100416E11 /* MRCSegmentedControlController.h */,
+				CB02FC981CF745C100416E11 /* MRCSegmentedControlController.m */,
+				CB02FC991CF745C100416E11 /* MRCTabBarController.h */,
+				CB02FC9A1CF745C100416E11 /* MRCTabBarController.m */,
+				CB02FC9B1CF745C100416E11 /* MRCTableViewController.h */,
+				CB02FC9C1CF745C100416E11 /* MRCTableViewController.m */,
+				CB02FC9D1CF745C100416E11 /* MRCViewController.h */,
+				CB02FC9E1CF745C100416E11 /* MRCViewController.m */,
+				CB02FC9F1CF745C100416E11 /* MRCWebViewController.h */,
+				CB02FCA01CF745C100416E11 /* MRCWebViewController.m */,
+				CB02FCA11CF745C100416E11 /* MRCWebViewController.xib */,
+				CB02FCA21CF745C100416E11 /* UINavigationItem+MRCBackBarButtonItem.h */,
+				CB02FCA31CF745C100416E11 /* UINavigationItem+MRCBackBarButtonItem.m */,
+				CB02FCA41CF745C100416E11 /* UISearchBar+MRCShowsCancelButton.h */,
+				CB02FCA51CF745C100416E11 /* UISearchBar+MRCShowsCancelButton.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		CB02FCA91CF745C100416E11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FCAA1CF745C100416E11 /* BaseClass */,
+				CB02FCB91CF745C100416E11 /* MRCLoginViewModel.h */,
+				CB02FCBA1CF745C100416E11 /* MRCLoginViewModel.m */,
+				CB02FCFA1CF7503300416E11 /* MRCSettingsViewModel.h */,
+				CB02FCFB1CF7503300416E11 /* MRCSettingsViewModel.m */,
+				CB02FCFD1CF7556700416E11 /* MRCAboutViewModel.h */,
+				CB02FCFE1CF7556700416E11 /* MRCAboutViewModel.m */,
+				CB02FD001CF755D100416E11 /* MRCFeedbackViewModel.h */,
+				CB02FD011CF755D100416E11 /* MRCFeedbackViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB02FCAA1CF745C100416E11 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FCAB1CF745C100416E11 /* MRCNavigationProtocol.h */,
+				CB02FCAC1CF745C100416E11 /* MRCSegmentedControlViewModel.h */,
+				CB02FCAD1CF745C100416E11 /* MRCSegmentedControlViewModel.m */,
+				CB02FCAE1CF745C100416E11 /* MRCTabBarViewModel.h */,
+				CB02FCAF1CF745C100416E11 /* MRCTabBarViewModel.m */,
+				CB02FCB01CF745C100416E11 /* MRCTableViewModel.h */,
+				CB02FCB11CF745C100416E11 /* MRCTableViewModel.m */,
+				CB02FCB21CF745C100416E11 /* MRCViewModel.h */,
+				CB02FCB31CF745C100416E11 /* MRCViewModel.m */,
+				CB02FCB41CF745C100416E11 /* MRCViewModelServices.h */,
+				CB02FCB51CF745C100416E11 /* MRCViewModelServicesImpl.h */,
+				CB02FCB61CF745C100416E11 /* MRCViewModelServicesImpl.m */,
+				CB02FCB71CF745C100416E11 /* MRCWebViewModel.h */,
+				CB02FCB81CF745C100416E11 /* MRCWebViewModel.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		CB02FCDA1CF74A0400416E11 /* TitleView */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FCDB1CF74A0400416E11 /* MRCDoubleTitleView.h */,
+				CB02FCDC1CF74A0400416E11 /* MRCDoubleTitleView.m */,
+				CB02FCDD1CF74A0400416E11 /* MRCLoadingTitleView.h */,
+				CB02FCDE1CF74A0400416E11 /* MRCLoadingTitleView.m */,
+				CB02FCDF1CF74A0400416E11 /* MRCLoadingTitleView.xib */,
+				CB02FCD71CF749DE00416E11 /* MRCTableViewCellStyleValue1.h */,
+				CB02FCD81CF749DE00416E11 /* MRCTableViewCellStyleValue1.m */,
+			);
+			path = TitleView;
+			sourceTree = "<group>";
+		};
+		CB02FCE31CF74BD500416E11 /* CBStoreHouseRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FCE41CF74BD500416E11 /* Class */,
+				CB02FCE91CF74BD500416E11 /* LICENSE */,
+				CB02FCEA1CF74BD500416E11 /* README.md */,
+			);
+			path = CBStoreHouseRefreshControl;
+			sourceTree = "<group>";
+		};
+		CB02FCE41CF74BD500416E11 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				CB02FCE51CF74BD500416E11 /* BarItem.h */,
+				CB02FCE61CF74BD500416E11 /* BarItem.m */,
+				CB02FCE71CF74BD500416E11 /* CBStoreHouseRefreshControl.h */,
+				CB02FCE81CF74BD500416E11 /* CBStoreHouseRefreshControl.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB02FC4F1CF743A500416E11 /* MVVMTest2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB02FC7D1CF743A500416E11 /* Build configuration list for PBXNativeTarget "MVVMTest2" */;
+			buildPhases = (
+				9E77490FD893BC425E57A8D0 /* 📦 Check Pods Manifest.lock */,
+				CB02FC4C1CF743A500416E11 /* Sources */,
+				CB02FC4D1CF743A500416E11 /* Frameworks */,
+				CB02FC4E1CF743A500416E11 /* Resources */,
+				CCE064652DFDE7F579B82FDB /* 📦 Embed Pods Frameworks */,
+				8BD42C47A0FEEFA26EB5C462 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MVVMTest2;
+			productName = MVVMTest2;
+			productReference = CB02FC501CF743A500416E11 /* MVVMTest2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB02FC681CF743A500416E11 /* MVVMTest2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB02FC801CF743A500416E11 /* Build configuration list for PBXNativeTarget "MVVMTest2Tests" */;
+			buildPhases = (
+				CB02FC651CF743A500416E11 /* Sources */,
+				CB02FC661CF743A500416E11 /* Frameworks */,
+				CB02FC671CF743A500416E11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB02FC6B1CF743A500416E11 /* PBXTargetDependency */,
+			);
+			name = MVVMTest2Tests;
+			productName = MVVMTest2Tests;
+			productReference = CB02FC691CF743A500416E11 /* MVVMTest2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB02FC731CF743A500416E11 /* MVVMTest2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB02FC831CF743A500416E11 /* Build configuration list for PBXNativeTarget "MVVMTest2UITests" */;
+			buildPhases = (
+				CB02FC701CF743A500416E11 /* Sources */,
+				CB02FC711CF743A500416E11 /* Frameworks */,
+				CB02FC721CF743A500416E11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB02FC761CF743A500416E11 /* PBXTargetDependency */,
+			);
+			name = MVVMTest2UITests;
+			productName = MVVMTest2UITests;
+			productReference = CB02FC741CF743A500416E11 /* MVVMTest2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB02FC481CF743A500416E11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = LG;
+				TargetAttributes = {
+					CB02FC4F1CF743A500416E11 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					CB02FC681CF743A500416E11 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = CB02FC4F1CF743A500416E11;
+					};
+					CB02FC731CF743A500416E11 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = CB02FC4F1CF743A500416E11;
+					};
+				};
+			};
+			buildConfigurationList = CB02FC4B1CF743A500416E11 /* Build configuration list for PBXProject "MVVMTest2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB02FC471CF743A500416E11;
+			productRefGroup = CB02FC511CF743A500416E11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB02FC4F1CF743A500416E11 /* MVVMTest2 */,
+				CB02FC681CF743A500416E11 /* MVVMTest2Tests */,
+				CB02FC731CF743A500416E11 /* MVVMTest2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB02FC4E1CF743A500416E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB02FCC51CF745C100416E11 /* MRCWebViewController.xib in Resources */,
+				CB02FCE21CF74A0400416E11 /* MRCLoadingTitleView.xib in Resources */,
+				CB02FC631CF743A500416E11 /* LaunchScreen.storyboard in Resources */,
+				CB02FCED1CF74BD500416E11 /* LICENSE in Resources */,
+				CB02FD071CF7567500416E11 /* MRCFeedbackViewController.xib in Resources */,
+				CB02FCF91CF7501200416E11 /* MRCSettingsViewController.xib in Resources */,
+				CB02FCC91CF745C100416E11 /* MRCLoginViewController.xib in Resources */,
+				CB02FD0C1CF757FA00416E11 /* MRCAboutViewController.xib in Resources */,
+				CB02FC601CF743A500416E11 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB02FC671CF743A500416E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB02FC721CF743A500416E11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BD42C47A0FEEFA26EB5C462 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVMTest2/Pods-MVVMTest2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E77490FD893BC425E57A8D0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCE064652DFDE7F579B82FDB /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVMTest2/Pods-MVVMTest2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB02FC4C1CF743A500416E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB02FCCA1CF745C100416E11 /* MRCSegmentedControlViewModel.m in Sources */,
+				CB02FCE01CF74A0400416E11 /* MRCDoubleTitleView.m in Sources */,
+				CB02FCCE1CF745C100416E11 /* MRCViewModelServicesImpl.m in Sources */,
+				CB02FCF11CF74C9300416E11 /* UIView+MRCFrameAdditions.m in Sources */,
+				CB02FCE11CF74A0400416E11 /* MRCLoadingTitleView.m in Sources */,
+				CB02FCEC1CF74BD500416E11 /* CBStoreHouseRefreshControl.m in Sources */,
+				CB02FCFF1CF7556700416E11 /* MRCAboutViewModel.m in Sources */,
+				CB02FCC21CF745C100416E11 /* MRCTableViewController.m in Sources */,
+				CB02FCCF1CF745C100416E11 /* MRCWebViewModel.m in Sources */,
+				CB02FCCC1CF745C100416E11 /* MRCTableViewModel.m in Sources */,
+				CB02FCBC1CF745C100416E11 /* MRCRouter.m in Sources */,
+				CB02FD061CF7567500416E11 /* MRCFeedbackViewController.m in Sources */,
+				CB02FCD01CF745C100416E11 /* MRCLoginViewModel.m in Sources */,
+				CB02FCF41CF74DDB00416E11 /* MRCViewControllerAnimatedTransition.m in Sources */,
+				CB02FCEE1CF74BD500416E11 /* README.md in Sources */,
+				CB02FCBE1CF745C100416E11 /* MRCNavigationController.m in Sources */,
+				CB02FCC01CF745C100416E11 /* MRCSegmentedControlController.m in Sources */,
+				CB02FC581CF743A500416E11 /* AppDelegate.m in Sources */,
+				CB02FCFC1CF7503300416E11 /* MRCSettingsViewModel.m in Sources */,
+				CB02FD0B1CF757FA00416E11 /* MRCAboutViewController.m in Sources */,
+				CB02FCBB1CF745C100416E11 /* MRCMemoryCache.m in Sources */,
+				CB02FCC71CF745C100416E11 /* UISearchBar+MRCShowsCancelButton.m in Sources */,
+				CB02FCF81CF7501200416E11 /* MRCSettingsViewController.m in Sources */,
+				CB02FCCB1CF745C100416E11 /* MRCTabBarViewModel.m in Sources */,
+				CB02FCC61CF745C100416E11 /* UINavigationItem+MRCBackBarButtonItem.m in Sources */,
+				CB02FCBF1CF745C100416E11 /* MRCNavigationControllerStack.m in Sources */,
+				CB02FCD91CF749DE00416E11 /* MRCTableViewCellStyleValue1.m in Sources */,
+				CB02FCEB1CF74BD500416E11 /* BarItem.m in Sources */,
+				CB02FCBD1CF745C100416E11 /* MRCUtil.m in Sources */,
+				CB02FCC11CF745C100416E11 /* MRCTabBarController.m in Sources */,
+				CB02FCCD1CF745C100416E11 /* MRCViewModel.m in Sources */,
+				CB02FC551CF743A500416E11 /* main.m in Sources */,
+				CB02FCC81CF745C100416E11 /* MRCLoginViewController.m in Sources */,
+				CB02FCC41CF745C100416E11 /* MRCWebViewController.m in Sources */,
+				CB02FD021CF755D100416E11 /* MRCFeedbackViewModel.m in Sources */,
+				CB02FCC31CF745C100416E11 /* MRCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB02FC651CF743A500416E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB02FC6E1CF743A500416E11 /* MVVMTest2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB02FC701CF743A500416E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB02FC791CF743A500416E11 /* MVVMTest2UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB02FC6B1CF743A500416E11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB02FC4F1CF743A500416E11 /* MVVMTest2 */;
+			targetProxy = CB02FC6A1CF743A500416E11 /* PBXContainerItemProxy */;
+		};
+		CB02FC761CF743A500416E11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB02FC4F1CF743A500416E11 /* MVVMTest2 */;
+			targetProxy = CB02FC751CF743A500416E11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB02FC611CF743A500416E11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB02FC621CF743A500416E11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB02FC7B1CF743A500416E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MVVMTest2/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB02FC7C1CF743A500416E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MVVMTest2/PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB02FC7E1CF743A500416E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9D38694D179876753CBDEE3 /* Pods-MVVMTest2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MVVMTest2/PrefixHeader.pch;
+				INFOPLIST_FILE = MVVMTest2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = one.MVVMTest2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB02FC7F1CF743A500416E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716F70DF76C75D04D8990421 /* Pods-MVVMTest2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MVVMTest2/PrefixHeader.pch;
+				INFOPLIST_FILE = MVVMTest2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = one.MVVMTest2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB02FC811CF743A500416E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MVVMTest2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = one.MVVMTest2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMTest2.app/MVVMTest2";
+			};
+			name = Debug;
+		};
+		CB02FC821CF743A500416E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MVVMTest2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = one.MVVMTest2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMTest2.app/MVVMTest2";
+			};
+			name = Release;
+		};
+		CB02FC841CF743A500416E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MVVMTest2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = one.MVVMTest2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MVVMTest2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CB02FC851CF743A500416E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MVVMTest2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = one.MVVMTest2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MVVMTest2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB02FC4B1CF743A500416E11 /* Build configuration list for PBXProject "MVVMTest2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB02FC7B1CF743A500416E11 /* Debug */,
+				CB02FC7C1CF743A500416E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB02FC7D1CF743A500416E11 /* Build configuration list for PBXNativeTarget "MVVMTest2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB02FC7E1CF743A500416E11 /* Debug */,
+				CB02FC7F1CF743A500416E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB02FC801CF743A500416E11 /* Build configuration list for PBXNativeTarget "MVVMTest2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB02FC811CF743A500416E11 /* Debug */,
+				CB02FC821CF743A500416E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB02FC831CF743A500416E11 /* Build configuration list for PBXNativeTarget "MVVMTest2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB02FC841CF743A500416E11 /* Debug */,
+				CB02FC851CF743A500416E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB02FC481CF743A500416E11 /* Project object */;
+}
